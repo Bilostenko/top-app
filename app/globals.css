@@ -1,10 +1,11 @@
 :root {
   --white: #ffffff;
   --black: #171717;
-  --primary: #7653FC;
-  --red: #FC836D;
-  --green: #1DC37E;
-  --green-light: #C8F8E4;
+  --gray-light: #ebebeb;
+  --primary: #7653fc;
+  --red: #fc836d;
+  --green: #1dc37e;
+  --green-light: #c8f8e4;
   --font-family: "Noto Sans", sans-serif;
 }
 
