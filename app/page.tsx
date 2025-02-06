@@ -4,7 +4,12 @@ export default function Home() {
   return (
     <div>
       <Htag tag="h2">text</Htag>
-      <Button className="primary">Click</Button>
+      <Button appearance="primary" arrow="right">
+        Click
+      </Button>
+      <Button appearance="secondary" arrow="right">
+        Click
+      </Button>
     </div>
   );
 }
