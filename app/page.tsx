@@ -1,9 +1,12 @@
 // import Image from "next/image";
-import { Htag, Button } from "@/components";
+import { Htag, Ptag, Button } from "@/components";
 export default function Home() {
   return (
     <div>
-      <Htag tag="h2">text</Htag>
+      <Htag tag="h2">Header</Htag>
+      <Ptag size="small">ipsum dsfsdf ssdfsdf ssfdfsdfsfs sdfsdf</Ptag>
+      <Ptag size="medium">ipsum dsfsdf ssdfsdf ssfdfsdfsfs sdfsdf</Ptag>
+      <Ptag size="large">ipsum dsfsdf ssdfsdf ssfdfsdfsfs sdfsdf</Ptag>
       <Button appearance="primary" arrow="right">
         Click
       </Button>
