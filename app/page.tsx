@@ -1,13 +1,23 @@
-// import Image from "next/image";
-import { Htag, Ptag, Button, Tag } from "@/components";
+"use client";
+
+import React, { useState, useEffect } from "react";
+import { Htag, Ptag, Button, Tag, Rating } from "@/components";
 export default function Home() {
+  const [count, setCount] = useState<number>(0);
+
+  useEffect(() => {}, [count]);
+
   return (
     <div>
-      <Htag tag="h2">Header</Htag>
+      <Htag tag="h2">{count}</Htag>
       <Ptag size="small">small</Ptag>
       <Ptag size="medium">medium</Ptag>
       <Ptag size="large">large</Ptag>
-      <Button appearance="primary" arrow="right">
+      <Button
+        appearance="primary"
+        arrow="right"
+        onClick={() => setCount(count + 1)}
+      >
         Click
       </Button>
       <Button appearance="secondary" arrow="right">
@@ -23,6 +33,7 @@ export default function Home() {
       <Tag size="small" color="green">
         green
       </Tag>
+      <Rating rating={2} />
     </div>
   );
 }

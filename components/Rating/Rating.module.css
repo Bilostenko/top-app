@@ -1,0 +1,16 @@
+.star {
+  display: inline-block;
+  margin-right: 5px;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.filled {
+  opacity: 1;
+  color: #ffd700; /* Using gold color for filled stars */
+}
+
+.starContainer {
+  display: inline-flex;
+  align-items: center;
+}
