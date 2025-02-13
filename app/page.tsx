@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Htag, Ptag, Button, Tag, Rating } from "@/components";
 export default function Home() {
   const [count, setCount] = useState<number>(0);
-
+  const [rating, setRating] = useState<number>(1);
   useEffect(() => {}, [count]);
 
   return (
@@ -33,7 +33,7 @@ export default function Home() {
       <Tag size="small" color="green">
         green
       </Tag>
-      <Rating rating={2} />
+      <Rating rating={rating} isEditable={true} setRating={setRating} />
     </div>
   );
 }
