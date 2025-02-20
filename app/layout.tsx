@@ -24,11 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${notoSans.variable} ${style.body}`}>
+      <body className={notoSans.variable}>
         <div className={style.wrapper}>
           <Header className={style.header} />
           <Sidebar className={style.sidebar} />
-          {children}
+          <div className={style.body}>{children}</div>
           <Footer className={style.footer} />
         </div>
       </body>

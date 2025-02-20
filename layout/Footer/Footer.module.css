@@ -1,0 +1,36 @@
+.footer {
+  background-color: #7a5af5;
+  padding: 10px 20px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.leftElement {
+  color: white;
+  font-size: 14px;
+}
+
+.rightElement {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.rightElement:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 765px) {
+  .wrapper {
+    grid-template-areas:
+      "leftElement"
+      "rightElement.";
+  }
+}
